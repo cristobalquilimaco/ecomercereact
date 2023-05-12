@@ -8,9 +8,9 @@ import { useDispatch } from 'react-redux'
 import Header from './components/shared/Header'
 import ProductId from './pages/ProductId'
 import Register from './pages/Register'
-import Login from './pages/login'
 import Cart from './pages/cart'
 import Purchases from './pages/Purchases'
+import Login from './pages/Login'
 
 
 
