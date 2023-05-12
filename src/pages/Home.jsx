@@ -2,8 +2,8 @@ import React, { useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
 import CardProduct from '../components/Home/CardProduct';
 import './home.css';
-import FilterCategory from '../components/Home/filterCategory';
 import FilterByPrice from '../components/Home/FilterByPrice';
+import FilterCategory from '../components/Home/FilterCategory';
 
 
 const Home = () => {
