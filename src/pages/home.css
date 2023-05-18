@@ -1,7 +1,8 @@
 .search__product__info{
+z-index: 1;
+position: absolute;
+margin-top: 100px;
 
-/* position: relative;
-top: 100px; */
 }
 
 .card__products{
