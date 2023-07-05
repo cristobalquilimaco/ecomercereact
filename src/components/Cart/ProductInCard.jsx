@@ -13,7 +13,7 @@ deleteProductFromCart(prodCart.id)
   return (
     <article className='product_in_cart'>
         <header className='product_in_cart_header'>
-            <img className='product_in_cart_images' src={prodCart.product.images[0].url} alt="" />
+            <img className='product_in_cart_images' src={prodCart?.product?.productImgs[0]?.url} alt={prodCart?.product.title} />
         </header>
             <h3 className='product_in_cart_title'>{prodCart.product.title}</h3>
         <button className='btn_product_delete' onClick={handleDeleteCart}>

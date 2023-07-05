@@ -5,11 +5,16 @@ import useFetch from '../../hooks/useFetch';
 import '../Home/styles/filterCategory.css'
 
 const FilterCategory = () => {
+
+  const URL_BASE = import.meta.env.VITE_REACT_APP_URL
+
   const dispatch = useDispatch();
 
   const [showFilter, setShowFilter] = useState(true);
 
-  const url = `https://e-commerce-api-v2.academlo.tech/api/v1/categories`;
+  const url = `${URL_BASE}/categories`;
+
+  
   const [categories, getAllCategories] = useFetch(url);
 
   useEffect(() => {
@@ -17,7 +22,7 @@ const FilterCategory = () => {
   }, []);
 
   const handleClickCategories = (id) => {
-    const url = `https://e-commerce-api-v2.academlo.tech/api/v1/products?categoryId=${id}`;
+    const url =  `${URL_BASE}/products?categoryId=${id}`
     dispatch(getAllProductsThunk(url));
   };
 

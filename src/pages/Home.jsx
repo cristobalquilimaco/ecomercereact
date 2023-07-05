@@ -63,10 +63,10 @@ const productFilter = productsGlobal?.filter(prod => prod.title.toLowerCase().in
 
       <div className='card__products'>
         {
-          productFilter?.map(prod => (
+          productFilter?.map(product => (
             <CardProduct
-              key={prod.id}
-              prod={prod}
+              key={product.id}
+              product={product}
             />
           ))
         }

@@ -29,7 +29,9 @@ const handleNext = ()=>{
     <div className='slider'>
       <button onClick={handlePrev} className='arrow__head arrow__left'>&lt;</button>
       <div style={objStyle} className='slider__second'>
-        {product?.images.map((imgInfo) => (
+        {
+        
+        product?.productImgs.map((imgInfo) => (
           <div className='slider__img_container' key={imgInfo.id}>
             <img className='slider__img' src={imgInfo.url} alt='' />
           </div>
