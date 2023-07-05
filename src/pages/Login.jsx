@@ -1,5 +1,6 @@
 
 import useAuthentication from '../hooks/UseAuthentication'
+import '../pages/styles/login.css'
 
 
 
@@ -21,7 +22,8 @@ loginUser(data)
 
 
   return (
-    <form onSubmit={handleLogin}>
+<article className='articleLogin'>
+<form onSubmit={handleLogin}>
       <h2>Login</h2>
       <div>
       <label htmlFor="email">Email</label>
@@ -34,6 +36,7 @@ loginUser(data)
       </div>
       <button>Login In</button>
     </form>
+</article>
   )
 }
 
