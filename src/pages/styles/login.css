@@ -1,13 +1,75 @@
+.loginpage{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
 .articleLogin{
+
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
-    background-color: aliceblue;
+    background-color: rgba(227, 236, 245, 0.089);
     width: 400px;
     height: 400px;
     border-radius: 10px;
-    
+    margin-top: 120px;
+
+    -webkit-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.23);
+    box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.23);
+
 }
 
+.formlogin{
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+
+
+.titlelogin {
+    text-align: center;
+    animation: blink 4s infinite;
+  }
+  
+  @keyframes blink {
+    20% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .formspaces{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+gap: 1rem;
+
+  }
+
+  .bottonlogin{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 15px;
+    -webkit-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.23);
+    box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.23);
+  }
+
+  .bottonlogin:hover{
+    background-color: rgb(214, 111, 111);
+    color: white;
+  }
+
+  

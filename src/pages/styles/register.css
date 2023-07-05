@@ -1,0 +1,28 @@
+.principalregister{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.register{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(227, 236, 245, 0.089);
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 120px;
+    -webkit-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.23);
+    box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.23);
+}
+
+.registerclass{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: space-around;
+}

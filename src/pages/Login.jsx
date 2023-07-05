@@ -22,21 +22,23 @@ loginUser(data)
 
 
   return (
-<article className='articleLogin'>
-<form onSubmit={handleLogin}>
-      <h2>Login</h2>
-      <div>
+    <div className='loginpage'>
+      <article className='articleLogin'>
+<form onSubmit={handleLogin} className='formlogin'>
+      <h2 className='titlelogin'>Login</h2>
+      <div className='formspaces' >
       <label htmlFor="email">Email</label>
       <input type="email" id='email' />
-      </div>
-
-      <div>
       <label htmlFor="password">Password</label>
       <input type="password" id='password' />
       </div>
-      <button>Login In</button>
+
+
+      <button className='bottonlogin'>Login In</button>
     </form>
 </article>
+    </div>
+
   )
 }
 
