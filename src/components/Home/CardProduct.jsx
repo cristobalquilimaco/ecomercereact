@@ -31,12 +31,12 @@ AddProductToCart(data)
         </header>
         <section className='product__section'>
 
-            <h2 className='product__title'>{product.title}</h2>
+            <h2 className='product__title'>{product?.title}</h2>
         </section>
         <div className='btn_information'>
         <div className='product__price'>
             <span className='product__price-label'>Price </span>
-            <span className='product__price-value'>{product.price}</span>
+            <span className='product__price-value'>{product?.price}</span>
         </div>
         <button onClick={handleClickBtn} className='product__btn'>
         <i className='bx bx-cart product__btn-icon'></i>

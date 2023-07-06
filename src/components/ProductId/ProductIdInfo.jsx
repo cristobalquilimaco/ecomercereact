@@ -29,7 +29,6 @@ AddProductToCart(data)
 
     return (
     <section className='product__info__card'>
-        <h3 className='product__info__brand'>{product?.brand}</h3>
         <h2 className='product__info__title'>{product?.title}</h2>
         <p className='product__info__description'>{product?.description}</p>
         <footer className='footer__info__card'>
