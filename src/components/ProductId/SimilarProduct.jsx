@@ -26,12 +26,12 @@ useEffect(() => {
         <h1>Discover similar products</h1>
         <div>
             {
-                filterProducts?.map( prod => {
+                filterProducts?.map( product => {
                     if(prod.id !== product.id)
                     return(
                         <CardProduct
-                        key={prod.id}
-                        prod={prod}
+                        key={product.id}
+                        product={product}
                         />
                     )
                 }
