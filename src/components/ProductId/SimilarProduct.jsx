@@ -27,7 +27,7 @@ useEffect(() => {
         <div>
             {
                 filterProducts?.map( product => {
-                    if(prod.id !== product.id)
+                    if(product.id !== product.id)
                     return(
                         <CardProduct
                         key={product.id}
